@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SubAtomic World</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="images/maarif-logo.png" alt="Maarif Schools Logo">
+      <h1 id="site-title">SubAtomic World</h1>
+    </div>
+    <div class="language-selector">
+      <button id="en-btn" class="active"><img src="images/uk-flag.png" alt="English"></button>
+      <button id="bs-btn"><img src="images/bosnia-flag.png" alt="Bosnian"></button>
+      <button id="tr-btn"><img src="images/turkey-flag.png" alt="Turkish"></button>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="sections-container">
+        <!-- Atom Section -->
+        <div class="section">
+          <h2 class="section-title" id="explore-atom">EXPLORE ATOM</h2>
+          <div class="atom-container">
+            <div class="atom">
+              <div class="nucleus" id="nucleus"></div>
+              <div class="orbit"></div>
+              <div class="electron" id="electron"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quarks Section -->
+        <div class="section">
+          <h2 class="section-title" id="explore-quarks">EXPLORE QUARKS</h2>
+          <div class="quarks-container">
+            <div class="quarks">
+              <div class="quark up" id="up-quark">u</div>
+              <div class="quark down" id="down-quark">d</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Particle Cards -->
+  <div class="particle-card" id="electron-card">
+    <div class="card-header">
+      <div class="card-title" id="electron-title">ELECTRON</div>
+      <button class="close-card">&times;</button>
+    </div>
+    <div class="card-inner">
+      <div class="particle-symbol">e<sup>-</sup></div>
+      <div class="particle-name" id="electron-name">Electron</div>
+    </div>
+    <div class="card-content">
+      <div class="card-symbol" id="electron-symbol">symbol: e<sup>-</sup></div>
+      <div class="card-mass" id="electron-mass">mass: m=9.109×10<sup>-31</sup> kg</div>
+      <div class="card-charge" id="electron-charge">charge: q=−1 e = −1.6×10<sup>-19</sup>C</div>
+      <div class="card-description" id="electron-description">
+        An electron is a subatomic particle with a negative elementary electric charge. It is a fundamental constituent of matter and belongs to the lepton family of particles.
+      </div>
+    </div>
+  </div>
+
+  <div class="particle-card" id="proton-card">
+    <div class="card-header">
+      <div class="card-title" id="proton-title">PROTON</div>
+      <button class="close-card">&times;</button>
+    </div>
+    <div class="card-inner">
+      <div class="particle-symbol">p<sup>+</sup></div>
+      <div class="particle-name" id="proton-name">Proton</div>
+    </div>
+    <div class="card-content">
+      <div class="card-symbol" id="proton-symbol">symbol: p<sup>+</sup></div>
+      <div class="card-mass" id="proton-mass">mass: m=1.673×10<sup>-27</sup> kg</div>
+      <div class="card-charge" id="proton-charge">charge: q=+1 e = +1.6×10<sup>-19</sup>C</div>
+      <div class="card-description" id="proton-description">
+        A proton is a subatomic particle with a positive electric charge. Protons, along with neutrons, make up the nucleus of an atom. The number of protons in an atom determines which chemical element it is.
+      </div>
+    </div>
+  </div>
+
+  <div class="particle-card" id="neutron-card">
+    <div class="card-header">
+      <div class="card-title" id="neutron-title">NEUTRON</div>
+      <button class="close-card">&times;</button>
+    </div>
+    <div class="card-inner">
+      <div class="particle-symbol">n<sup>0</sup></div>
+      <div class="particle-name" id="neutron-name">Neutron</div>
+    </div>
+    <div class="card-content">
+      <div class="card-symbol" id="neutron-symbol">symbol: n<sup>0</sup></div>
+      <div class="card-mass" id="neutron-mass">mass: m=1.675×10<sup>-27</sup> kg</div>
+      <div class="card-charge" id="neutron-charge">charge: q=0</div>
+      <div class="card-description" id="neutron-description">
+        A neutron is a subatomic particle with no electric charge. Neutrons are found in the nucleus of atoms alongside protons. They have slightly more mass than protons and help stabilize the nucleus.
+      </div>
+    </div>
+  </div>
+
+  <div class="particle-card" id="up-quark-card">
+    <div class="card-header">
+      <div class="card-title" id="up-quark-title">UP QUARK</div>
+      <button class="close-card">&times;</button>
+    </div>
+    <div class="card-inner">
+      <div class="particle-symbol">u</div>
+      <div class="particle-name" id="up-quark-name">Up Quark</div>
+    </div>
+    <div class="card-content">
+      <div class="card-symbol" id="up-quark-symbol">symbol: u</div>
+      <div class="card-mass" id="up-quark-mass">mass: m=2.2×10<sup>-30</sup> kg</div>
+      <div class="card-charge" id="up-quark-charge">charge: q=+2/3 e</div>
+      <div class="card-description" id="up-quark-description">
+        The up quark is a type of elementary particle and a fundamental constituent of matter. It is one of the six quarks in the Standard Model of particle physics. Up quarks combine with down quarks to form protons and neutrons.
+      </div>
+    </div>
+  </div>
+
+  <div class="particle-card" id="down-quark-card">
+    <div class="card-header">
+      <div class="card-title" id="down-quark-title">DOWN QUARK</div>
+      <button class="close-card">&times;</button>
+    </div>
+    <div class="card-inner">
+      <div class="particle-symbol">d</div>
+      <div class="particle-name" id="down-quark-name">Down Quark</div>
+    </div>
+    <div class="card-content">
+      <div class="card-symbol" id="down-quark-symbol">symbol: d</div>
+      <div class="card-mass" id="down-quark-mass">mass: m=4.7×10<sup>-30</sup> kg</div>
+      <div class="card-charge" id="down-quark-charge">charge: q=-1/3 e</div>
+      <div class="card-description" id="down-quark-description">
+        The down quark is a type of elementary particle and a fundamental constituent of matter. It is one of the six quarks in the Standard Model of particle physics. Down quarks combine with up quarks to form protons and neutrons.
+      </div>
+    </div>
+  </div>
+
+  <div class="overlay"></div>
+
+  <div class="back-button" id="back-button">
+    <img src="images/back-arrow.png" alt="Back">
+  </div>
+
+  <footer>
+    <div class="footer-logo">
+      <img src="images/maarif-logo.png" alt="Maarif Schools Logo">
+      <span id="footer-text">Maarif Schools</span>
+    </div>
+    <div class="copyright" id="copyright">© 2025 SubAtomic World. All rights reserved.</div>
+  </footer>
+
+  <script src="js/translations.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
